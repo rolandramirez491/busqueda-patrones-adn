@@ -2,8 +2,6 @@
 
 ## Descripción
 
-Proyecto del Equipo 7 para la materia Estructura de Datos (Parcial 3).
-
 El problema es encontrar una secuencia corta de letras (el **patrón**) dentro de una cadena muy larga (el **texto**). Como ejemplo práctico se busca un patrón de bases (A, C, G, T) dentro del ADN humano, que tiene más de 5 millones de letras.
 
 El objetivo es implementar y comparar tres algoritmos de búsqueda de patrones:
@@ -30,7 +28,7 @@ El archivo `human.txt` ya viene incluido en el repositorio, en la misma carpeta 
 ## Tecnologías
 
 - Python 3
-- Librerías que ya vienen con Python (no hay que instalar nada):
+- Librerías utilizadas:
   - `os`: para limpiar la pantalla y activar los colores en la terminal
   - `time`: para las pausas entre movimientos
   - `random`: para mostrar un fragmento al azar del ADN
@@ -65,7 +63,7 @@ h = base^(m - 1) % primo
 
 ## Ejecución
 
-1. Tener `human.txt` en la misma carpeta que `BPC.py` (ya viene en el repositorio).
+1. Se debe tener `human.txt` en la misma carpeta del proyecto.
 2. Correr:
 
 ```bash
@@ -113,7 +111,3 @@ Búsqueda en todo el ADN humano (5.534.562 letras):
 - Los tres algoritmos encuentran el patrón las mismas veces; lo que cambia es el trabajo que hacen.
 - **Rabin–Karp** hace muchas menos comparaciones de letras (casi 100 veces menos) porque primero compara los hash, y solo revisa letras cuando los hash coinciden.
 - **KMP** hace menos comparaciones que la ingenua porque nunca se devuelve en el texto. La diferencia es pequeña en el ADN porque los patrones casi no se repiten consigo mismos, y la tabla de prefijos queda casi toda en 0.
-
-## Autores
-
-- Roland Ramírez Patiño
